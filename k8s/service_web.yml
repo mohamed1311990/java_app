@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: java-service
+spec:
+  selector:
+    app: java-app-web
+  type: ClusterIP
+  ports:
+    - port: 80           # Internal cluster port
+      targetPort: 8080   # Port inside the container

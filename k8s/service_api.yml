@@ -4,7 +4,7 @@ metadata:
   name: java-service
 spec:
   selector:
-    app: java-app
+    app: java-app-api
   type: ClusterIP
   ports:
     - port: 80           # Internal cluster port
