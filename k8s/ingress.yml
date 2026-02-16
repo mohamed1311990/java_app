@@ -12,13 +12,13 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: java-app-api
+                name: java-service-api
                 port:
                   number: 80
           - path: /web
             pathType: Prefix
             backend:
               service:
-                name: java-app-web
+                name: java-service-web
                 port:
                   number: 80
