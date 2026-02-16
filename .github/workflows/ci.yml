@@ -37,6 +37,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/hello-docker-java:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/java-app:latest
 
 
