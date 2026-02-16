@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-java-deployment
+  name: java-app
   labels:
-    app: hello-java
+    app: java-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: hello-java
+      app: java-app
   template:
     metadata:
       labels:
-        app: hello-java
+        app: java-app
     spec:
       containers:
-        - name: hello-java-container
+        - name: java-app
           image: mohamed1311990/hello-docker-java:latest
           ports:
             - containerPort: 8080
